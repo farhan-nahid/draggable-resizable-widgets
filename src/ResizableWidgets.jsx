@@ -63,9 +63,6 @@ const ResizableWidgets = () => {
     { i: "widget3", x: 6, y: 0, w: 2, h: 2, width: 1, height: 2 },
   ]);
 
-  console.log(JSON.stringify(layouts));
-  // console.log(layouts);
-
   const handleModify = (layouts, layout) => {
     const tempArray = widgetArray;
 
@@ -109,9 +106,9 @@ const ResizableWidgets = () => {
                 h: widget?.h,
                 i: widget.i,
                 minW: 1,
-                maxW: Infinity,
+                maxW: 5,
                 minH: 1,
-                maxH: Infinity,
+                maxH: 5,
                 isDraggable: true,
                 isResizable: true,
               }}
